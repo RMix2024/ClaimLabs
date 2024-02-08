@@ -1,0 +1,40 @@
+﻿@page "{id}"
+@model Grade_Manager_Razor.Pages.ClassRooms.ClassRoomDetailsMenuModel
+@using Grade_Manager_Razor.Models
+@using Grade_Manager_Razor.Data
+
+@{
+    ViewData["Title"] = "ClassRoom Details Menu";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.classRoom.Name</h3>
+
+<div class="table-responsive">
+    <table class="table table-striped student">
+        <thead>
+            <tr>
+                <th>Students</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model.Students)
+            {
+            <tr>
+                <td class="align-middle">@student.Name</td>
+                <td><a asp-page="/Students/StudentDetailsMenu" asp-route-StudentId="@student.StudentId" class="btn btn-success">Student Details Menu</a></td>
+                <td><a asp-page="/Assignments/AddAssignment" asp-route-StudentId="@student.StudentId" class="btn btn-success">Add new Assignment</a></td>
+                <td><a asp-page="/Students/DeleteStudent" asp-route-StudentId="@student.StudentId" class="btn btn-danger">Remove</a></td>
+
+
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<a asp-page="/ClassRooms/Compare2Students" asp-route-id="@Model.classRoom.ClassRoomId" class="btn btn-success">Compare 2 Students</a>
+<a asp-page="/ClassRooms/ShowBestStudent" asp-route-id="@Model.classRoom.ClassRoomId" class="btn btn-success">Show Best Student</a>
+<a asp-page="/ClassRooms/ShowWorstStudent" asp-route-id="@Model.classRoom.ClassRoomId" class="btn btn-success">Show worst Student</a>
+<a asp-page="/ClassRooms/ShowClassAverage" asp-route-id="@Model.classRoom.ClassRoomId" class="btn btn-success">Show Class Average</a>
+<a asp-page="/Index" class="btn btn-success">Main Menu</a>

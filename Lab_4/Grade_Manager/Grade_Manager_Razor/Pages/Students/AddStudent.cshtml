@@ -1,0 +1,15 @@
+﻿@page
+@model Grade_Manager_Razor.Pages.Students.AddStudentModel
+@{
+    ViewData["Title"] = "Add Student";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <form>
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="sName" name="sName" value="Student to Add">
+        <input type="submit" value="Submit">
+    </form>
+</div>

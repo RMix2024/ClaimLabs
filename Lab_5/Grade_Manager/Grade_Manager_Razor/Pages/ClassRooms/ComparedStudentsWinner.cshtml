@@ -1,0 +1,16 @@
+﻿@page "{StudentId}"
+@model Grade_Manager_Razor.Pages.ClassRooms.ComparedStudentsWinnerModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Grade_Manager_Razor.Models
+@using Grade_Manager_Razor.Data
+@{
+    ViewData["Title"] = "Winning Student";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h2>@Model.student.Name Is the Winner!</h2>
+    
+
+
+<a asp-page="/ClassRooms/ClassRoomDetailsMenu" asp-route-id="@Model.student.ClassRoomId" class="btn btn-success">Back to last Menu</a>

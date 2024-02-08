@@ -1,0 +1,42 @@
+﻿@page  "{AssignmentId}"
+@model Grade_Manager_Razor.Pages.Assignments.DeleteAssignmentModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Grade_Manager_Razor.Models
+@using Grade_Manager_Razor.Data
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+
+<h3>Are you sure you want to delete this?</h3>
+
+
+<div class="table-responsive">
+    <table class="table table-striped assignment">
+        <thead>
+            <tr>
+                <th>Assignment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Model.assignment.Name
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div>
+    <form method="post" asp-page-handler="Delete">
+        <input type="hidden" asp-for="@Model.assignment.AssignmentId" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-page="../Index">Back to classrooms</a>
+    </form>
+</div>

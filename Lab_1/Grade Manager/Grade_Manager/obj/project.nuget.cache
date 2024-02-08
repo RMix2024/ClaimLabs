@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "WhTXY6HT6ClW9g2FftSInFqhG/ksn4ZIRaqyK9c8L3Scyg5SBvKGjORKsZe0QbyeSf78x7npQs6Q0/M07jYpqg==",
+  "success": true,
+  "projectFilePath": "D:\\Software_Developing\\C_Sharp\\C_Sharp_Labs\\Lab_1\\Grade Manager\\Grade_Manager\\Grade_Manager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LS2KT\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
+    "C:\\Users\\LS2KT\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\LS2KT\\.nuget\\packages\\morelinq\\3.3.2\\morelinq.3.3.2.nupkg.sha512",
+    "C:\\Users\\LS2KT\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}

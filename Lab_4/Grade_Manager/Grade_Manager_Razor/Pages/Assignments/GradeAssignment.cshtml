@@ -1,0 +1,15 @@
+﻿@page
+@model Grade_Manager_Razor.Pages.Assignments.GradeAssignmentModel
+@{
+    ViewData["Title"] = "Grade this Assignment";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <form>
+        <label for="GradeAssignment">Assignment Grade:</label>
+        <input type="text" id="aName" name="aName" value="Current Grade">
+        <input type="submit" value="Submit">
+    </form>
+</div>

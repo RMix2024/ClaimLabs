@@ -1,0 +1,15 @@
+﻿@page
+@model Grade_Manager_Razor.Pages.ClassRooms.AddClassRoomModel
+@{
+    ViewData["Title"] = "Add ClassRoom";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <form>
+        <label for="className">ClassRoom Name:</label>
+        <input type="text" id="clName" name="clName" value="Class to Add">
+        <input type="submit" value="Submit">
+    </form>
+</div>

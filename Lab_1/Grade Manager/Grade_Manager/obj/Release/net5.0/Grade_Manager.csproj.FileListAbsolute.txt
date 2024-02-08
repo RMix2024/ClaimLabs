@@ -1,0 +1,15 @@
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\bin\Release\net5.0\Grade_Manager.exe
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\bin\Release\net5.0\Grade_Manager.deps.json
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\bin\Release\net5.0\Grade_Manager.runtimeconfig.json
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\bin\Release\net5.0\Grade_Manager.runtimeconfig.dev.json
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\bin\Release\net5.0\Grade_Manager.dll
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\bin\Release\net5.0\ref\Grade_Manager.dll
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\bin\Release\net5.0\Grade_Manager.pdb
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\obj\Release\net5.0\Grade_Manager.GeneratedMSBuildEditorConfig.editorconfig
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\obj\Release\net5.0\Grade_Manager.AssemblyInfoInputs.cache
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\obj\Release\net5.0\Grade_Manager.AssemblyInfo.cs
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\obj\Release\net5.0\Grade_Manager.csproj.CoreCompileInputs.cache
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\obj\Release\net5.0\Grade_Manager.dll
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\obj\Release\net5.0\ref\Grade_Manager.dll
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\obj\Release\net5.0\Grade_Manager.pdb
+D:\Software_Developing\C#\C#_Labs\Lab_1\Grade Manager\Grade_Manager\obj\Release\net5.0\Grade_Manager.genruntimeconfig.cache

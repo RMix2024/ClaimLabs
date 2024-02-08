@@ -1,0 +1,20 @@
+﻿@page "{id?}"
+@model Grade_Manager_Razor.Pages.ClassRooms.AddClassRoomModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Grade_Manager_Razor.Models
+@using Grade_Manager_Razor.Data
+@{
+    ViewData["Title"] = "Add ClassRoom";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <form method="post" asp-page-handler="Submit">
+        <label>ClassRoom Name:</label>
+        <input type="text" value="Class to Add" asp-for="@Model.Input.Name">
+        <input type="submit" value="Submit" class="text-success">
+    </form>
+</div>
+
+<a asp-page="../Index" class="btn btn-success">Main Menu</a>

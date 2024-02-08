@@ -1,0 +1,23 @@
+﻿@page "{id}"
+@model Grade_Manager_Razor.Pages.Students.AddStudentModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Grade_Manager_Razor.Models
+@using Grade_Manager_Razor.Data
+@{
+    ViewData["Title"] = "Add Student";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<div>
+    <form method="post" asp-page-handler="Submit">
+        <label>Student Name:</label>
+        <input type="text" value="Student to Add" asp-for="@Model.Input.Name">
+        <input asp-for="@Model.classroomid" type="hidden" />
+        <input type="submit" value="Submit" class="text-success">
+        <span asp-validation-for="@Model.Input.Name" class="text-danger"></span>
+    </form>
+</div>
+
+<a asp-page="/ClassRooms/ClassRoomDetailsMenu" asp-route-id="@Model.classroomid" class="btn btn-success">Back to last Menu</a>

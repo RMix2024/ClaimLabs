@@ -1,0 +1,27 @@
+﻿@page
+@model Grade_Manager_Razor.Pages.Students.ShowAllStudentsModel
+@{
+    ViewData["Title"] = "Show Students";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>Student Name</td>
+            </tr>
+        </thead>
+        @foreach(KeyValuePair<string, Student> item in Model.StudentDictionary)
+            {
+    <tr>
+        <td>@item.Value.Name</td>
+        <td><button onclick="window.location.href='/Students/EditStudentDetails';">Edit</button></td>
+        <td><button onclick="window.location.href='/Students/AssignAssignments';">Assign Assignments</button></td>
+        <td><button onclick="window.location.href='/Students/ShowBestGrade';">Show Best Grade</button></td>
+        <td><button onclick="window.location.href='/Students/ShowWorstGrade';">Show Worst Grade</button></td>
+    </tr>
+            }
+    </table>
+</div>

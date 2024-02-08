@@ -1,0 +1,30 @@
+﻿@page
+@model Grade_Manager_Razor.Pages.Assignments.ShowAllAssignmentsModel
+@{
+    ViewData["Title"] = "Show Assignments";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>Assignment Name</td>
+                <td>Complete?</td>
+            </tr>
+        </thead>
+        @foreach (KeyValuePair<string, Assignment> item in Model.AssignmentsDictionary)
+        {
+            <tr>
+                <td>@item.Value.Name</td>
+                <td>@item.Value.IsComplete</td>
+                <td><button onclick="window.location.href='/Assignments/EditAssignmentDetails';">Edit</button></td>
+                <td><button onclick="window.location.href='/Assignments/RemoveAssignment';">Remove</button></td>
+                <td><button onclick="window.location.href='/Assignments/GradeAssignment';">Grade</button></td>
+            </tr>
+        }
+    </table>
+
+</div>
+

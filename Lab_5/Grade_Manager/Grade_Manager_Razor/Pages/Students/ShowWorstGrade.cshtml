@@ -1,0 +1,14 @@
+﻿@page "{StudentId}"
+@model Grade_Manager_Razor.Pages.Students.ShowWorstGradeModel
+@{
+    ViewData["Title"] = "Worst Grade";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    @Model.student.Name Best Assignment is @Model.assignment.Name with a score of @Model.assignment.Grade
+</div>
+
+<a asp-page="/Students.StudentDetailsMenu" asp-route-id="@Model.student.StudentId" class="btn btn-success">Back to last Menu</a>
+

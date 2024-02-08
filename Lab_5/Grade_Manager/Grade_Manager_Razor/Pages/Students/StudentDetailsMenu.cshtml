@@ -1,0 +1,47 @@
+﻿@page  "{StudentId}"
+@model Grade_Manager_Razor.Pages.Students.StudentDetailsMenuModel
+@using Grade_Manager_Razor.Models
+@using Grade_Manager_Razor.Data
+@{
+    ViewData["Title"] = "Student Details Menu";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.student.Name</h3>
+
+<div class="table-responsive">
+    <table class="table table-striped assignments">
+        <thead>
+            <tr>
+                <th>Assignments</th>
+                <th>Grade</th>
+                <th>Is Complete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var assignment in Model.Assignments)
+            {
+                <tr>
+                    <td class="align-middle">@assignment.Name</td>
+                    <td class="align-middle">@assignment.Grade</td>
+                    <td class="align-middle">@assignment.IsComplete</td>
+                    <td><a asp-page="/Assignments/GradeAssignment" asp-route-AssignmentId="@assignment.AssignmentId" class="btn btn-success">Grade Assignment</a></td>
+                    <td><a asp-page="/Assignments/DeleteAssignment" asp-route-AssignmentId="@assignment.AssignmentId" class="btn btn-danger">Remove</a></td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <tf>Average Grade</tf>
+                <tf>
+                    @Model.asssignmentsAverage                    
+                </tf>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<div>
+    <a asp-page="/Students/ShowBestGrade" asp-route-StudentId="@Model.student.StudentId" class="btn btn-success">Show Best Assignment</a>
+    <a asp-page="/Students/ShowWorstGrade" asp-route-StudentId="@Model.student.StudentId" class="btn btn-success">Show Worst Assignment</a>
+    <a asp-page="/ClassRooms/ClassRoomDetailsMenu" asp-route-id="@Model.student.ClassRoomId" class="btn btn-success">Back to last Menu</a>
+</div>
